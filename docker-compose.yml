@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  super-mario:
+    image: deweiliu/super-mario
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 80:80
+    container_name: super-mario-container
